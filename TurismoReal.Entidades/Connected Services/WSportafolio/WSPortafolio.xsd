@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws/" targetNamespace="http://ws/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="agregarAdministrador" type="tns:agregarAdministrador" />
+  <xs:element name="agregarAdministradorResponse" type="tns:agregarAdministradorResponse" />
+  <xs:element name="agregarCliente" type="tns:agregarCliente" />
+  <xs:element name="agregarClienteResponse" type="tns:agregarClienteResponse" />
+  <xs:element name="agregarDepartamento" type="tns:agregarDepartamento" />
+  <xs:element name="agregarDepartamentoResponse" type="tns:agregarDepartamentoResponse" />
+  <xs:element name="agregarFuncionario" type="tns:agregarFuncionario" />
+  <xs:element name="agregarFuncionarioResponse" type="tns:agregarFuncionarioResponse" />
+  <xs:element name="agregarReserva" type="tns:agregarReserva" />
+  <xs:element name="agregarReservaResponse" type="tns:agregarReservaResponse" />
+  <xs:element name="eliminarAdministrador" type="tns:eliminarAdministrador" />
+  <xs:element name="eliminarAdministradorResponse" type="tns:eliminarAdministradorResponse" />
+  <xs:element name="eliminarCliente" type="tns:eliminarCliente" />
+  <xs:element name="eliminarClienteResponse" type="tns:eliminarClienteResponse" />
+  <xs:element name="eliminarDepartamento" type="tns:eliminarDepartamento" />
+  <xs:element name="eliminarDepartamentoResponse" type="tns:eliminarDepartamentoResponse" />
+  <xs:element name="eliminarFuncionario" type="tns:eliminarFuncionario" />
+  <xs:element name="eliminarFuncionarioResponse" type="tns:eliminarFuncionarioResponse" />
+  <xs:element name="eliminarReserva" type="tns:eliminarReserva" />
+  <xs:element name="eliminarReservaResponse" type="tns:eliminarReservaResponse" />
+  <xs:element name="listarAdministrador" type="tns:listarAdministrador" />
+  <xs:element name="listarAdministradorResponse" type="tns:listarAdministradorResponse" />
+  <xs:element name="listarCliente" type="tns:listarCliente" />
+  <xs:element name="listarClienteResponse" type="tns:listarClienteResponse" />
+  <xs:element name="listarDepartamento" type="tns:listarDepartamento" />
+  <xs:element name="listarDepartamentoResponse" type="tns:listarDepartamentoResponse" />
+  <xs:element name="listarFuncionario" type="tns:listarFuncionario" />
+  <xs:element name="listarFuncionarioResponse" type="tns:listarFuncionarioResponse" />
+  <xs:element name="listarReserva" type="tns:listarReserva" />
+  <xs:element name="listarReservaResponse" type="tns:listarReservaResponse" />
+  <xs:element name="login" type="tns:login" />
+  <xs:element name="loginResponse" type="tns:loginResponse" />
+  <xs:element name="modificarAdministrador" type="tns:modificarAdministrador" />
+  <xs:element name="modificarAdministradorResponse" type="tns:modificarAdministradorResponse" />
+  <xs:element name="modificarCliente" type="tns:modificarCliente" />
+  <xs:element name="modificarClienteResponse" type="tns:modificarClienteResponse" />
+  <xs:element name="modificarDepartamento" type="tns:modificarDepartamento" />
+  <xs:element name="modificarDepartamentoResponse" type="tns:modificarDepartamentoResponse" />
+  <xs:element name="modificarFuncionario" type="tns:modificarFuncionario" />
+  <xs:element name="modificarFuncionarioResponse" type="tns:modificarFuncionarioResponse" />
+  <xs:element name="modificarReserva" type="tns:modificarReserva" />
+  <xs:element name="modificarReservaResponse" type="tns:modificarReservaResponse" />
+  <xs:complexType name="agregarFuncionario">
+    <xs:sequence>
+      <xs:element name="rut" type="xs:int" />
+      <xs:element minOccurs="0" name="dv" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido_paterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido_materno" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarFuncionarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarCliente">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarClienteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:cliente" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellido_materno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido_paterno" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="dv" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="rut" type="xs:int" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarFuncionario">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarFuncionarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:funcionario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="funcionario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellido_materno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido_paterno" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="dv" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="rut" type="xs:int" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarReserva">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarReservaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:reserva" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="reserva">
+    <xs:sequence>
+      <xs:element name="cant_personas" type="xs:int" />
+      <xs:element name="cliente_rut" type="xs:int" />
+      <xs:element name="id_departamento" type="xs:int" />
+      <xs:element name="id_reserva" type="xs:int" />
+      <xs:element minOccurs="0" name="inicio_reserva" type="xs:dateTime" />
+      <xs:element name="monto_pagado" type="xs:int" />
+      <xs:element minOccurs="0" name="termino_reserva" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarFuncionario">
+    <xs:sequence>
+      <xs:element name="rut" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarFuncionarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDepartamento">
+    <xs:sequence>
+      <xs:element name="id_depa" type="xs:int" />
+      <xs:element name="nid_dep" type="xs:int" />
+      <xs:element minOccurs="0" name="ndireccion" type="xs:string" />
+      <xs:element minOccurs="0" name="ndescripcion" type="xs:string" />
+      <xs:element name="nprecio" type="xs:int" />
+      <xs:element name="latitud" type="xs:float" />
+      <xs:element name="nlongitud" type="xs:float" />
+      <xs:element name="id_comuna" type="xs:int" />
+      <xs:element name="nid_estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDepartamentoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarReserva">
+    <xs:sequence>
+      <xs:element name="id_reserva" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarReservaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarDepartamento">
+    <xs:sequence>
+      <xs:element name="id_dep" type="xs:int" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element name="precio" type="xs:int" />
+      <xs:element name="latitud" type="xs:float" />
+      <xs:element name="longitud" type="xs:float" />
+      <xs:element name="id_comuna" type="xs:int" />
+      <xs:element name="id_estado" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarDepartamentoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarDepartamento">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarDepartamentoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:departamento" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="departamento">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="descripcion" type="xs:string" />
+      <xs:element minOccurs="0" name="direccion" type="xs:string" />
+      <xs:element name="id_comuna" type="xs:int" />
+      <xs:element name="id_departamento" type="xs:int" />
+      <xs:element name="id_estado" type="xs:int" />
+      <xs:element name="latitud" type="xs:float" />
+      <xs:element name="longitud" type="xs:float" />
+      <xs:element name="precio" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarReserva">
+    <xs:sequence>
+      <xs:element name="id_reserva" type="xs:int" />
+      <xs:element minOccurs="0" name="nini_res" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="nter_res" type="xs:dateTime" />
+      <xs:element name="ncant_pers" type="xs:int" />
+      <xs:element name="nmont_paga" type="xs:int" />
+      <xs:element name="nid_dep" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarReservaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarAdministrador">
+    <xs:sequence>
+      <xs:element name="rut" type="xs:int" />
+      <xs:element name="nrut" type="xs:int" />
+      <xs:element minOccurs="0" name="ndv" type="xs:string" />
+      <xs:element minOccurs="0" name="nnombre" type="xs:string" />
+      <xs:element minOccurs="0" name="napellido_paterno" type="xs:string" />
+      <xs:element minOccurs="0" name="napellido_materno" type="xs:string" />
+      <xs:element minOccurs="0" name="ncorreo" type="xs:string" />
+      <xs:element minOccurs="0" name="nusuario" type="xs:string" />
+      <xs:element minOccurs="0" name="ncontrasena" type="xs:string" />
+      <xs:element minOccurs="0" name="ntelefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarAdministradorResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarCliente">
+    <xs:sequence>
+      <xs:element name="rut" type="xs:int" />
+      <xs:element name="nrut" type="xs:int" />
+      <xs:element minOccurs="0" name="ndv" type="xs:string" />
+      <xs:element minOccurs="0" name="nnombre" type="xs:string" />
+      <xs:element minOccurs="0" name="napellido_paterno" type="xs:string" />
+      <xs:element minOccurs="0" name="napellido_materno" type="xs:string" />
+      <xs:element minOccurs="0" name="ncorreo" type="xs:string" />
+      <xs:element minOccurs="0" name="nusuario" type="xs:string" />
+      <xs:element minOccurs="0" name="ncontrasena" type="xs:string" />
+      <xs:element minOccurs="0" name="ntelefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarClienteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarAdministrador">
+    <xs:sequence>
+      <xs:element name="rut" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarAdministradorResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarCliente">
+    <xs:sequence>
+      <xs:element name="rut" type="xs:int" />
+      <xs:element minOccurs="0" name="dv" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido_paterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido_materno" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarClienteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDepartamento">
+    <xs:sequence>
+      <xs:element name="id_dep" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDepartamentoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarCliente">
+    <xs:sequence>
+      <xs:element name="rut" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarClienteResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarAdministrador">
+    <xs:sequence>
+      <xs:element name="rut" type="xs:int" />
+      <xs:element minOccurs="0" name="dv" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido_paterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido_materno" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarAdministradorResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarReserva">
+    <xs:sequence>
+      <xs:element name="id_reserva" type="xs:int" />
+      <xs:element minOccurs="0" name="inicio_reserva" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="termino_reserva" type="xs:dateTime" />
+      <xs:element name="cant_personas" type="xs:int" />
+      <xs:element name="monto_pagado" type="xs:int" />
+      <xs:element name="id_departamento" type="xs:int" />
+      <xs:element name="cliente_rut" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="agregarReservaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="login">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="loginResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarFuncionario">
+    <xs:sequence>
+      <xs:element name="rut" type="xs:int" />
+      <xs:element name="nrut" type="xs:int" />
+      <xs:element minOccurs="0" name="ndv" type="xs:string" />
+      <xs:element minOccurs="0" name="nnombre" type="xs:string" />
+      <xs:element minOccurs="0" name="napellido_paterno" type="xs:string" />
+      <xs:element minOccurs="0" name="napellido_materno" type="xs:string" />
+      <xs:element minOccurs="0" name="ncorreo" type="xs:string" />
+      <xs:element minOccurs="0" name="nusuario" type="xs:string" />
+      <xs:element minOccurs="0" name="ncontrasena" type="xs:string" />
+      <xs:element minOccurs="0" name="ntelefono" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarFuncionarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarAdministrador">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarAdministradorResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:administrador" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="administrador">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellido_materno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido_paterno" type="xs:string" />
+      <xs:element minOccurs="0" name="contrasena" type="xs:string" />
+      <xs:element minOccurs="0" name="correo" type="xs:string" />
+      <xs:element minOccurs="0" name="dv" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element name="rut" type="xs:int" />
+      <xs:element minOccurs="0" name="telefono" type="xs:string" />
+      <xs:element minOccurs="0" name="usuario" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://ws/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="WSPortafolio" targetNamespace="http://ws/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/WebServicePortafolio/WSPortafolio?xsd=1" namespace="http://ws/" />
+    </xsd:schema>
+  </types>
+  <message name="login">
+    <part name="parameters" element="tns:login" />
+  </message>
+  <message name="loginResponse">
+    <part name="parameters" element="tns:loginResponse" />
+  </message>
+  <message name="eliminarReserva">
+    <part name="parameters" element="tns:eliminarReserva" />
+  </message>
+  <message name="eliminarReservaResponse">
+    <part name="parameters" element="tns:eliminarReservaResponse" />
+  </message>
+  <message name="modificarReserva">
+    <part name="parameters" element="tns:modificarReserva" />
+  </message>
+  <message name="modificarReservaResponse">
+    <part name="parameters" element="tns:modificarReservaResponse" />
+  </message>
+  <message name="eliminarCliente">
+    <part name="parameters" element="tns:eliminarCliente" />
+  </message>
+  <message name="eliminarClienteResponse">
+    <part name="parameters" element="tns:eliminarClienteResponse" />
+  </message>
+  <message name="agregarCliente">
+    <part name="parameters" element="tns:agregarCliente" />
+  </message>
+  <message name="agregarClienteResponse">
+    <part name="parameters" element="tns:agregarClienteResponse" />
+  </message>
+  <message name="modificarCliente">
+    <part name="parameters" element="tns:modificarCliente" />
+  </message>
+  <message name="modificarClienteResponse">
+    <part name="parameters" element="tns:modificarClienteResponse" />
+  </message>
+  <message name="listarCliente">
+    <part name="parameters" element="tns:listarCliente" />
+  </message>
+  <message name="listarClienteResponse">
+    <part name="parameters" element="tns:listarClienteResponse" />
+  </message>
+  <message name="agregarReserva">
+    <part name="parameters" element="tns:agregarReserva" />
+  </message>
+  <message name="agregarReservaResponse">
+    <part name="parameters" element="tns:agregarReservaResponse" />
+  </message>
+  <message name="listarReserva">
+    <part name="parameters" element="tns:listarReserva" />
+  </message>
+  <message name="listarReservaResponse">
+    <part name="parameters" element="tns:listarReservaResponse" />
+  </message>
+  <message name="eliminarFuncionario">
+    <part name="parameters" element="tns:eliminarFuncionario" />
+  </message>
+  <message name="eliminarFuncionarioResponse">
+    <part name="parameters" element="tns:eliminarFuncionarioResponse" />
+  </message>
+  <message name="agregarAdministrador">
+    <part name="parameters" element="tns:agregarAdministrador" />
+  </message>
+  <message name="agregarAdministradorResponse">
+    <part name="parameters" element="tns:agregarAdministradorResponse" />
+  </message>
+  <message name="modificarFuncionario">
+    <part name="parameters" element="tns:modificarFuncionario" />
+  </message>
+  <message name="modificarFuncionarioResponse">
+    <part name="parameters" element="tns:modificarFuncionarioResponse" />
+  </message>
+  <message name="listarDepartamento">
+    <part name="parameters" element="tns:listarDepartamento" />
+  </message>
+  <message name="listarDepartamentoResponse">
+    <part name="parameters" element="tns:listarDepartamentoResponse" />
+  </message>
+  <message name="eliminarDepartamento">
+    <part name="parameters" element="tns:eliminarDepartamento" />
+  </message>
+  <message name="eliminarDepartamentoResponse">
+    <part name="parameters" element="tns:eliminarDepartamentoResponse" />
+  </message>
+  <message name="agregarDepartamento">
+    <part name="parameters" element="tns:agregarDepartamento" />
+  </message>
+  <message name="agregarDepartamentoResponse">
+    <part name="parameters" element="tns:agregarDepartamentoResponse" />
+  </message>
+  <message name="modificarAdministrador">
+    <part name="parameters" element="tns:modificarAdministrador" />
+  </message>
+  <message name="modificarAdministradorResponse">
+    <part name="parameters" element="tns:modificarAdministradorResponse" />
+  </message>
+  <message name="eliminarAdministrador">
+    <part name="parameters" element="tns:eliminarAdministrador" />
+  </message>
+  <message name="eliminarAdministradorResponse">
+    <part name="parameters" element="tns:eliminarAdministradorResponse" />
+  </message>
+  <message name="modificarDepartamento">
+    <part name="parameters" element="tns:modificarDepartamento" />
+  </message>
+  <message name="modificarDepartamentoResponse">
+    <part name="parameters" element="tns:modificarDepartamentoResponse" />
+  </message>
+  <message name="listarFuncionario">
+    <part name="parameters" element="tns:listarFuncionario" />
+  </message>
+  <message name="listarFuncionarioResponse">
+    <part name="parameters" element="tns:listarFuncionarioResponse" />
+  </message>
+  <message name="listarAdministrador">
+    <part name="parameters" element="tns:listarAdministrador" />
+  </message>
+  <message name="listarAdministradorResponse">
+    <part name="parameters" element="tns:listarAdministradorResponse" />
+  </message>
+  <message name="agregarFuncionario">
+    <part name="parameters" element="tns:agregarFuncionario" />
+  </message>
+  <message name="agregarFuncionarioResponse">
+    <part name="parameters" element="tns:agregarFuncionarioResponse" />
+  </message>
+  <portType name="WSPortafolio">
+    <operation name="login">
+      <input wsam:Action="http://ws/WSPortafolio/loginRequest" message="tns:login" />
+      <output wsam:Action="http://ws/WSPortafolio/loginResponse" message="tns:loginResponse" />
+    </operation>
+    <operation name="eliminarReserva">
+      <input wsam:Action="http://ws/WSPortafolio/eliminarReservaRequest" message="tns:eliminarReserva" />
+      <output wsam:Action="http://ws/WSPortafolio/eliminarReservaResponse" message="tns:eliminarReservaResponse" />
+    </operation>
+    <operation name="modificarReserva">
+      <input wsam:Action="http://ws/WSPortafolio/modificarReservaRequest" message="tns:modificarReserva" />
+      <output wsam:Action="http://ws/WSPortafolio/modificarReservaResponse" message="tns:modificarReservaResponse" />
+    </operation>
+    <operation name="eliminarCliente">
+      <input wsam:Action="http://ws/WSPortafolio/eliminarClienteRequest" message="tns:eliminarCliente" />
+      <output wsam:Action="http://ws/WSPortafolio/eliminarClienteResponse" message="tns:eliminarClienteResponse" />
+    </operation>
+    <operation name="agregarCliente">
+      <input wsam:Action="http://ws/WSPortafolio/agregarClienteRequest" message="tns:agregarCliente" />
+      <output wsam:Action="http://ws/WSPortafolio/agregarClienteResponse" message="tns:agregarClienteResponse" />
+    </operation>
+    <operation name="modificarCliente">
+      <input wsam:Action="http://ws/WSPortafolio/modificarClienteRequest" message="tns:modificarCliente" />
+      <output wsam:Action="http://ws/WSPortafolio/modificarClienteResponse" message="tns:modificarClienteResponse" />
+    </operation>
+    <operation name="listarCliente">
+      <input wsam:Action="http://ws/WSPortafolio/listarClienteRequest" message="tns:listarCliente" />
+      <output wsam:Action="http://ws/WSPortafolio/listarClienteResponse" message="tns:listarClienteResponse" />
+    </operation>
+    <operation name="agregarReserva">
+      <input wsam:Action="http://ws/WSPortafolio/agregarReservaRequest" message="tns:agregarReserva" />
+      <output wsam:Action="http://ws/WSPortafolio/agregarReservaResponse" message="tns:agregarReservaResponse" />
+    </operation>
+    <operation name="listarReserva">
+      <input wsam:Action="http://ws/WSPortafolio/listarReservaRequest" message="tns:listarReserva" />
+      <output wsam:Action="http://ws/WSPortafolio/listarReservaResponse" message="tns:listarReservaResponse" />
+    </operation>
+    <operation name="eliminarFuncionario">
+      <input wsam:Action="http://ws/WSPortafolio/eliminarFuncionarioRequest" message="tns:eliminarFuncionario" />
+      <output wsam:Action="http://ws/WSPortafolio/eliminarFuncionarioResponse" message="tns:eliminarFuncionarioResponse" />
+    </operation>
+    <operation name="agregarAdministrador">
+      <input wsam:Action="http://ws/WSPortafolio/agregarAdministradorRequest" message="tns:agregarAdministrador" />
+      <output wsam:Action="http://ws/WSPortafolio/agregarAdministradorResponse" message="tns:agregarAdministradorResponse" />
+    </operation>
+    <operation name="modificarFuncionario">
+      <input wsam:Action="http://ws/WSPortafolio/modificarFuncionarioRequest" message="tns:modificarFuncionario" />
+      <output wsam:Action="http://ws/WSPortafolio/modificarFuncionarioResponse" message="tns:modificarFuncionarioResponse" />
+    </operation>
+    <operation name="listarDepartamento">
+      <input wsam:Action="http://ws/WSPortafolio/listarDepartamentoRequest" message="tns:listarDepartamento" />
+      <output wsam:Action="http://ws/WSPortafolio/listarDepartamentoResponse" message="tns:listarDepartamentoResponse" />
+    </operation>
+    <operation name="eliminarDepartamento">
+      <input wsam:Action="http://ws/WSPortafolio/eliminarDepartamentoRequest" message="tns:eliminarDepartamento" />
+      <output wsam:Action="http://ws/WSPortafolio/eliminarDepartamentoResponse" message="tns:eliminarDepartamentoResponse" />
+    </operation>
+    <operation name="agregarDepartamento">
+      <input wsam:Action="http://ws/WSPortafolio/agregarDepartamentoRequest" message="tns:agregarDepartamento" />
+      <output wsam:Action="http://ws/WSPortafolio/agregarDepartamentoResponse" message="tns:agregarDepartamentoResponse" />
+    </operation>
+    <operation name="modificarAdministrador">
+      <input wsam:Action="http://ws/WSPortafolio/modificarAdministradorRequest" message="tns:modificarAdministrador" />
+      <output wsam:Action="http://ws/WSPortafolio/modificarAdministradorResponse" message="tns:modificarAdministradorResponse" />
+    </operation>
+    <operation name="eliminarAdministrador">
+      <input wsam:Action="http://ws/WSPortafolio/eliminarAdministradorRequest" message="tns:eliminarAdministrador" />
+      <output wsam:Action="http://ws/WSPortafolio/eliminarAdministradorResponse" message="tns:eliminarAdministradorResponse" />
+    </operation>
+    <operation name="modificarDepartamento">
+      <input wsam:Action="http://ws/WSPortafolio/modificarDepartamentoRequest" message="tns:modificarDepartamento" />
+      <output wsam:Action="http://ws/WSPortafolio/modificarDepartamentoResponse" message="tns:modificarDepartamentoResponse" />
+    </operation>
+    <operation name="listarFuncionario">
+      <input wsam:Action="http://ws/WSPortafolio/listarFuncionarioRequest" message="tns:listarFuncionario" />
+      <output wsam:Action="http://ws/WSPortafolio/listarFuncionarioResponse" message="tns:listarFuncionarioResponse" />
+    </operation>
+    <operation name="listarAdministrador">
+      <input wsam:Action="http://ws/WSPortafolio/listarAdministradorRequest" message="tns:listarAdministrador" />
+      <output wsam:Action="http://ws/WSPortafolio/listarAdministradorResponse" message="tns:listarAdministradorResponse" />
+    </operation>
+    <operation name="agregarFuncionario">
+      <input wsam:Action="http://ws/WSPortafolio/agregarFuncionarioRequest" message="tns:agregarFuncionario" />
+      <output wsam:Action="http://ws/WSPortafolio/agregarFuncionarioResponse" message="tns:agregarFuncionarioResponse" />
+    </operation>
+  </portType>
+  <binding name="WSPortafolioPortBinding" type="tns:WSPortafolio">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="login">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarReserva">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarReserva">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarCliente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="agregarCliente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarCliente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarCliente">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="agregarReserva">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarReserva">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarFuncionario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="agregarAdministrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarFuncionario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarDepartamento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarDepartamento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="agregarDepartamento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarAdministrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarAdministrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarDepartamento">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarFuncionario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAdministrador">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="agregarFuncionario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSPortafolio">
+    <port name="WSPortafolioPort" binding="tns:WSPortafolioPortBinding">
+      <soap:address location="http://localhost:8080/WebServicePortafolio/WSPortafolio" />
+    </port>
+  </service>
+</definitions>
