@@ -64,7 +64,7 @@ namespace TurismoReal.Presentacion
             BtnEliminar.Visible = false;
         }
 
-        private void Buscar()
+        /*private void Buscar()
     {
         try
         {
@@ -77,7 +77,7 @@ namespace TurismoReal.Presentacion
             MessageBox.Show(ex.Message + ex.StackTrace);
 
         }
-    }
+    }*/
 
         private void Formato()
         {
