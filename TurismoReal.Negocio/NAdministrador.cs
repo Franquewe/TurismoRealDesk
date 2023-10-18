@@ -79,7 +79,7 @@ namespace TurismoReal.Negocio
             }
         }
 
-        /*public DataTable ListarPorRut(int rut)
+        public DataTable ListarPorRut(int rut)
         {
             try
             {
@@ -90,7 +90,7 @@ namespace TurismoReal.Negocio
                 Console.WriteLine("Error en capa de negocios al listar administradores: " + ex.Message);
                 return null;
             }
-        }*/
+        }
 
 
 
