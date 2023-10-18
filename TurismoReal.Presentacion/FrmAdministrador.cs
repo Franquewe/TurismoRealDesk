@@ -64,7 +64,7 @@ namespace TurismoReal.Presentacion
             BtnEliminar.Visible = false;
         }
 
-        /*private void Buscar()
+        private void Buscar()
     {
         try
         {
@@ -78,7 +78,6 @@ namespace TurismoReal.Presentacion
 
         }
     }
-    */
 
         private void Formato()
         {
