@@ -212,6 +212,9 @@
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.agregarAdministradorResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.agregarArticuloResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.agregarCheckInResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -221,13 +224,34 @@
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.agregarClienteResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.agregarCondicionDepaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.agregarDepartamentoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.agregarDepaServicioResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.agregarFuncionarioResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.agregarInventarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.agregarMantenimientoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.agregarReservaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.agregarReservaTourResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.agregarReservaTransporteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.articulo.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.checkIn.datasource">
@@ -239,10 +263,19 @@
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.cliente.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.departamento.datasource">
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.condicionDepa.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.departamentoDetalle.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.depaServicio.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.eliminarAdministradorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.eliminarArticuloResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.eliminarCheckInResponse.datasource">
@@ -254,19 +287,58 @@
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.eliminarClienteResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.eliminarCondicionDepaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.eliminarDepartamentoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.eliminarFuncionarioResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.eliminarInventarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.eliminarMantenimientoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.eliminarReservaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.eliminarReservaTourResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.eliminarReservaTransporteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.estadoDepaDisponibleFinMantenimientoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.estadoDepaDisponibleTerminoReservaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.estadoDepaMantenimientoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.estadoDepaOcupadoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.funcionario.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.inventario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarAdministradorPorRutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarAdministradorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarArticuloPorIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarArticuloResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarCheckInResponse.datasource">
@@ -275,25 +347,91 @@
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarCheckOutResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarClientePorRutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarClienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarCondicionDepaPorParametroResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarCondicionDepaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarDepaPorIdResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarDepartamentoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarDepaServicioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarFuncionarioPorRutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarFuncionarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarInventarioPorIdDepaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarInventarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarMantenimientoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarReservaResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarReservaTourIdReservaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarReservaTourResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarReservaTransporteIdReservaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarReservaTransporteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarTourResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.listarTransporteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.loginC.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.loginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.mantenimiento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.metodoLoginResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.modificarAdministradorResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.modificarArticuloResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.modificarCheckInResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.modificarCheckOutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.modificarClienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.modificarCondicionDepaResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.modificarDepartamentoResponse.datasource">
@@ -302,10 +440,34 @@
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.modificarFuncionarioResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.modificarInventarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.modificarMantenimientoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.modificarReservaResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.modificarReservaTourResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.modificarReservaTransporteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.reserva.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.reservaTour.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.reservaTrans.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.tour.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\WSportafolio\TurismoReal.Presentacion.WSportafolio.transporte.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\WSportafolio\WSPortafolio.wsdl" />

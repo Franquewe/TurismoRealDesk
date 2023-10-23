@@ -38,6 +38,7 @@ namespace TurismoReal.Presentacion
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.departamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.articulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inventarioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.reservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,7 +66,7 @@ namespace TurismoReal.Presentacion
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.articulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarSesiónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -79,7 +80,8 @@ namespace TurismoReal.Presentacion
             this.serviciosExtraToolStripMenuItem,
             this.viewMenu,
             this.windowsMenu,
-            this.helpMenu});
+            this.helpMenu,
+            this.cerrarSesiónToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(20, 60);
             this.menuStrip.MdiWindowListItem = this.windowsMenu;
             this.menuStrip.Name = "menuStrip";
@@ -131,14 +133,21 @@ namespace TurismoReal.Presentacion
             // inventarioToolStripMenuItem
             // 
             this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
-            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.inventarioToolStripMenuItem.Text = "Departamentos";
             this.inventarioToolStripMenuItem.Click += new System.EventHandler(this.inventarioToolStripMenuItem_Click);
+            // 
+            // articulosToolStripMenuItem
+            // 
+            this.articulosToolStripMenuItem.Name = "articulosToolStripMenuItem";
+            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.articulosToolStripMenuItem.Text = "Articulos";
+            this.articulosToolStripMenuItem.Click += new System.EventHandler(this.articulosToolStripMenuItem_Click);
             // 
             // inventarioToolStripMenuItem1
             // 
             this.inventarioToolStripMenuItem1.Name = "inventarioToolStripMenuItem1";
-            this.inventarioToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.inventarioToolStripMenuItem1.Size = new System.Drawing.Size(155, 22);
             this.inventarioToolStripMenuItem1.Text = "Inventario";
             this.inventarioToolStripMenuItem1.Click += new System.EventHandler(this.inventarioToolStripMenuItem1_Click);
             // 
@@ -155,21 +164,21 @@ namespace TurismoReal.Presentacion
             // checkInToolStripMenuItem
             // 
             this.checkInToolStripMenuItem.Name = "checkInToolStripMenuItem";
-            this.checkInToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.checkInToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.checkInToolStripMenuItem.Text = "Reservas";
             this.checkInToolStripMenuItem.Click += new System.EventHandler(this.checkInToolStripMenuItem_Click);
             // 
             // checkOutToolStripMenuItem
             // 
             this.checkOutToolStripMenuItem.Name = "checkOutToolStripMenuItem";
-            this.checkOutToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
+            this.checkOutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.checkOutToolStripMenuItem.Text = "Check In";
             this.checkOutToolStripMenuItem.Click += new System.EventHandler(this.checkOutToolStripMenuItem_Click);
             // 
             // checkOutToolStripMenuItem1
             // 
             this.checkOutToolStripMenuItem1.Name = "checkOutToolStripMenuItem1";
-            this.checkOutToolStripMenuItem1.Size = new System.Drawing.Size(130, 22);
+            this.checkOutToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.checkOutToolStripMenuItem1.Text = "Check Out";
             this.checkOutToolStripMenuItem1.Click += new System.EventHandler(this.checkOutToolStripMenuItem1_Click);
             // 
@@ -342,12 +351,12 @@ namespace TurismoReal.Presentacion
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
-            // articulosToolStripMenuItem
+            // cerrarSesiónToolStripMenuItem
             // 
-            this.articulosToolStripMenuItem.Name = "articulosToolStripMenuItem";
-            this.articulosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.articulosToolStripMenuItem.Text = "Articulos";
-            this.articulosToolStripMenuItem.Click += new System.EventHandler(this.articulosToolStripMenuItem_Click);
+            this.cerrarSesiónToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.cerrarSesiónToolStripMenuItem.Name = "cerrarSesiónToolStripMenuItem";
+            this.cerrarSesiónToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.cerrarSesiónToolStripMenuItem.Text = "Cerrar Sesión";
             // 
             // FrmPrincipal
             // 
@@ -411,6 +420,7 @@ namespace TurismoReal.Presentacion
         private System.Windows.Forms.ToolStripMenuItem checkOutToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem inventarioToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem articulosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cerrarSesiónToolStripMenuItem;
     }
 }
 

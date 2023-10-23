@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TurismoReal.Presentacion.WSportafolio;
+using TurismoReal.Entidades;
 
 namespace TurismoReal.Presentacion
 {
@@ -37,16 +38,20 @@ namespace TurismoReal.Presentacion
 
                 WSPortafolioClient cliente = new WSPortafolioClient();
 
-                if (cliente.login(user, pass) != null)
+                loginC login = cliente.metodoLogin(user, pass);
+                String tipoUsuario = login.tipo_usuario;
+                int rut = login.rut;
+
+                if (tipoUsuario != null)
                 {
-                    if (cliente.login(user, pass).Equals("admin") || cliente.login(user, pass).Equals("funcionario"))
+                    if (tipoUsuario == "admin" || tipoUsuario == "funcionario")
                     {
-                        FrmPrincipal frm = new FrmPrincipal();
+                        FrmPrincipal frm = new FrmPrincipal(tipoUsuario, rut);
                         this.Hide();
                         frm.ShowDialog();
                         this.Close();
                     }
-                    else if (cliente.login(user, pass).Equals("cliente"))
+                    else if (tipoUsuario == "cliente")
                     {
                         MetroFramework.MetroMessageBox.Show(this, "Usuario Cliente no tiene los permisos suficientes", "Notificación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
@@ -66,9 +71,27 @@ namespace TurismoReal.Presentacion
             }
         }
 
-            private void Cancelar_Click(object sender, EventArgs e)
+        private void Cancelar_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void txtContrasena_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                // Llamar al método de inicio de sesión cuando se presiona Enter
+                BtnAcceder_Click(sender, e);
+            }
+        }
+
+        private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                // Llamar al método de inicio de sesión cuando se presiona Enter
+                BtnAcceder_Click(sender, e);
+            }
         }
     }
 }

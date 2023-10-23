@@ -13,10 +13,14 @@ namespace TurismoReal.Presentacion
     public partial class FrmPrincipal : MetroFramework.Forms.MetroForm
     {
         private int childFormNumber = 0;
+        private String tipoUsuario;
+        private int rut;
 
-        public FrmPrincipal()
+        public FrmPrincipal(string tipoUsuario, int rut)
         {
             InitializeComponent();
+            this.tipoUsuario = tipoUsuario;
+            this.rut = rut;
         }
 
         private void ShowNewForm(object sender, EventArgs e)

@@ -66,10 +66,11 @@ namespace TurismoReal.Negocio
 
         private DDAdministrador datosAdministrador = new DDAdministrador();
 
-        public Administrador BuscarAdministradorPorRut(int rut)
+        public static Administrador BuscarAdministradorPorRut(int rut)
         {
             try
             {
+                DDAdministrador datosAdministrador = new DDAdministrador();
                 return datosAdministrador.BuscarAdministradorPorRut(rut);
             }
             catch (Exception ex)
