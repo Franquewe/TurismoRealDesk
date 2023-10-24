@@ -45,6 +45,56 @@ namespace TurismoReal.Presentacion
             }
         }
 
+        private void TxtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            string filtroTexto = TxtBuscar.Text;
+
+            if (DGVListar.DataSource != null)
+            {
+                DataTable dataTable = (DataTable)DGVListar.DataSource;
+                DataView dataView = dataTable.DefaultView;
+
+                try
+                {
+                    if (!string.IsNullOrEmpty(filtroTexto))
+                    {
+                        // Filtrar por Nombre o RUT
+                        dataView.RowFilter = $"Direccion LIKE '%{filtroTexto}%' OR Convert(ID, 'System.String') LIKE '%{filtroTexto}%'";
+                    }
+                    else
+                    {
+                        dataView.RowFilter = string.Empty;
+                    }
+
+                    DGVListar.DataSource = dataView.ToTable();
+                    LblTotal.Text = "Total de registros: " + Convert.ToString(dataView.Count);
+                }
+                catch (Exception ex)
+                {
+                    // Manejar la excepción (por ejemplo, mostrar un mensaje al usuario o restaurar la vista original)
+                    MetroFramework.MetroMessageBox.Show(this, "Error al aplicar el filtro: " + ex.Message);
+                }
+            }
+            else
+            {
+                ListarDepartamentos();
+            }
+        }
+
+        private void TxtBuscar_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Back)
+            {
+                TxtBuscar_TextChanged((object)sender, e);
+            }
+        }
+
+        private void BtnRefrescar_Click(object sender, EventArgs e)
+        {
+            TxtBuscar.Text = ""; // Borra el contenido del TextBox
+            ListarDepartamentos(); // Recarga la lista completa
+        }
+
 
         private void Formato()
         {

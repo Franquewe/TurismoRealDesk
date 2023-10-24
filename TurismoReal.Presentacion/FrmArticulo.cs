@@ -58,7 +58,7 @@ namespace TurismoReal.Presentacion
                     if (!string.IsNullOrEmpty(filtroTexto))
                     {
                         // Filtrar por Nombre o RUT
-                        dataView.RowFilter = $"Nombre LIKE '%{filtroTexto}%' OR Convert(RUT, 'System.String') LIKE '%{filtroTexto}%'";
+                        dataView.RowFilter = $"Convert(Id Articulo, 'System.String') LIKE '%{filtroTexto}%'";
                     }
                     else
                     {
