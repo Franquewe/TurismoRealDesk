@@ -75,7 +75,7 @@ namespace TurismoReal.Datos
             try
             {
                 client = new WSPortafolioClient();
-                ward = client.agregarDepartamento(direccion, descripcion, precio, latitud, longitud, capacidadPersona, cantidadImagenes, idComuna, idEstado);
+                ward = client.agregarDepartamento(direccion, descripcion, precio, latitud, longitud, capacidadPersona, cantidadImagenes, idComuna);
             }
             catch (Exception ex)
             {

@@ -235,7 +235,7 @@ namespace TurismoReal.Presentacion
                 TxtTelefono.Text = Convert.ToString(DGVListar.CurrentRow.Cells["Telefono"].Value);
                 TxtCorreo.Text = Convert.ToString(DGVListar.CurrentRow.Cells["Correo"].Value);
                 TxtUsuario.Text = Convert.ToString(DGVListar.CurrentRow.Cells["Usuario"].Value);
-                TxtContrasena.Text = Convert.ToString(DGVListar.CurrentRow.Cells["Contraseña"].Value);
+                TxtContrasena.Text = Convert.ToString(DGVListar.CurrentRow.Cells["Contrasena"].Value);
                 TabGeneral.SelectedIndex = 1;
             }
             catch (Exception)
